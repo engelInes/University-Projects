@@ -1,0 +1,21 @@
+[2023-05-05 14:09:03] [info] Start Program:
+Path:"C:\Users\Ines\Downloads\a45\a45\x64\Debug\A_45.exe"
+Arguments:
+Working directory: "C:\Users\Ines\Downloads\a45\a45\"
+Modules: Selected: C:\Users\Ines\Downloads\a45\a45\x64\Debug\A_45.exe Excluded: 
+Sources: Selected: C:\Users\Ines\Downloads\a45\a45 Excluded: UI.cpp 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Ines\AppData\Local\Temp\hvzwebny.v5m 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-05-05 14:09:03] [info] Module: C:\Users\Ines\Downloads\a45\a45\x64\Debug\A_45.exe is selected because it matches selected pattern: C:\Users\Ines\Downloads\a45\a45\x64\Debug\A_45.exe
+[2023-05-05 14:09:03] [info] ----------------------------------------------------
+[2023-05-05 14:09:03] [info] Coverage binary generated in file: C:\Users\Ines\AppData\Local\Temp\hvzwebny.v5m
+[2023-05-05 14:09:03] [info] ----------------------------------------------------
