@@ -1,0 +1,305 @@
+ExeStack:
+CompoundStmt{stmt1=VarDeclStmt{variable name='v', variable type=model.types.RefType@41cf53f9}, stmt2=CompoundStmt{stmt1=NewStmt{varName='v', expr=ValueExpression{value=20}}, stmt2=CompoundStmt{stmt1=VarDeclStmt{variable name='a', variable type=model.types.RefType@579bb367}, stmt2=CompoundStmt{stmt1=NewStmt{varName='a', expr=VariableExpression{variableExp='v'}}, stmt2=CompoundStmt{stmt1=PrintStmt{exp=model.expressions.ReadHeapExpression@1de0aca6}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=model.expressions.ReadHeapExpression@255316f2 + , exp2=ValueExpression{value=5}}}}}}}}
+
+Symbol Table:
+
+Output List:
+
+File Table:
+
+Heap Table:
+
+END
+
+ExeStack:
+
+Symbol Table:
+
+Output List:
+
+File Table:
+
+Heap Table:
+
+END
+
+ExeStack:
+CompoundStmt{stmt1=NewStmt{varName='v', expr=ValueExpression{value=20}}, stmt2=CompoundStmt{stmt1=VarDeclStmt{variable name='a', variable type=model.types.RefType@579bb367}, stmt2=CompoundStmt{stmt1=NewStmt{varName='a', expr=VariableExpression{variableExp='v'}}, stmt2=CompoundStmt{stmt1=PrintStmt{exp=model.expressions.ReadHeapExpression@1de0aca6}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=model.expressions.ReadHeapExpression@255316f2 + , exp2=ValueExpression{value=5}}}}}}}
+
+Symbol Table:
+
+Output List:
+
+File Table:
+
+Heap Table:
+
+END
+
+ExeStack:
+
+Symbol Table:
+v -> RefValue{address=0, locationType=integer}
+
+Output List:
+
+File Table:
+
+Heap Table:
+
+END
+
+ExeStack:
+CompoundStmt{stmt1=VarDeclStmt{variable name='a', variable type=model.types.RefType@579bb367}, stmt2=CompoundStmt{stmt1=NewStmt{varName='a', expr=VariableExpression{variableExp='v'}}, stmt2=CompoundStmt{stmt1=PrintStmt{exp=model.expressions.ReadHeapExpression@1de0aca6}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=model.expressions.ReadHeapExpression@255316f2 + , exp2=ValueExpression{value=5}}}}}}
+
+Symbol Table:
+v -> RefValue{address=0, locationType=integer}
+
+Output List:
+
+File Table:
+
+Heap Table:
+
+END
+
+ExeStack:
+
+Symbol Table:
+v -> RefValue{address=1, locationType=integer}
+
+Output List:
+
+File Table:
+
+Heap Table:
+1 -> 20
+
+END
+
+ExeStack:
+CompoundStmt{stmt1=NewStmt{varName='a', expr=VariableExpression{variableExp='v'}}, stmt2=CompoundStmt{stmt1=PrintStmt{exp=model.expressions.ReadHeapExpression@1de0aca6}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=model.expressions.ReadHeapExpression@255316f2 + , exp2=ValueExpression{value=5}}}}}
+
+Symbol Table:
+v -> RefValue{address=1, locationType=integer}
+
+Output List:
+
+File Table:
+
+Heap Table:
+1 -> 20
+
+END
+
+ExeStack:
+
+Symbol Table:
+a -> RefValue{address=0, locationType=model.types.RefType@b1a58a3}
+v -> RefValue{address=1, locationType=integer}
+
+Output List:
+
+File Table:
+
+Heap Table:
+1 -> 20
+
+END
+
+ExeStack:
+CompoundStmt{stmt1=PrintStmt{exp=model.expressions.ReadHeapExpression@1de0aca6}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=model.expressions.ReadHeapExpression@255316f2 + , exp2=ValueExpression{value=5}}}}
+
+Symbol Table:
+a -> RefValue{address=0, locationType=model.types.RefType@b1a58a3}
+v -> RefValue{address=1, locationType=integer}
+
+Output List:
+
+File Table:
+
+Heap Table:
+1 -> 20
+
+END
+
+ExeStack: 
+
+Symbol Table: 
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+
+END
+
+ExeStack: 
+CompoundStmt{stmt1=NewStmt{varName='v', expr=ValueExpression{value=20}}, stmt2=CompoundStmt{stmt1=VarDeclStmt{variable name='a', variable type=RefType{innerType=RefType{innerType=integer}}}, stmt2=CompoundStmt{stmt1=NewStmt{varName='a', expr=VariableExpression{variableExp='v'}}, stmt2=CompoundStmt{stmt1=PrintStmt{exp=ReadHeapExpression{expression=VariableExpression{variableExp='v'}}}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=ReadHeapExpression{expression=ReadHeapExpression{expression=VariableExpression{variableExp='a'}}} + , exp2=ValueExpression{value=5}}}}}}}
+
+Symbol Table: 
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+
+END
+
+ExeStack: 
+
+Symbol Table: 
+v -> RefValue{address=0, locationType=integer}
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+
+END
+
+ExeStack: 
+CompoundStmt{stmt1=VarDeclStmt{variable name='a', variable type=RefType{innerType=RefType{innerType=integer}}}, stmt2=CompoundStmt{stmt1=NewStmt{varName='a', expr=VariableExpression{variableExp='v'}}, stmt2=CompoundStmt{stmt1=PrintStmt{exp=ReadHeapExpression{expression=VariableExpression{variableExp='v'}}}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=ReadHeapExpression{expression=ReadHeapExpression{expression=VariableExpression{variableExp='a'}}} + , exp2=ValueExpression{value=5}}}}}}
+
+Symbol Table: 
+v -> RefValue{address=0, locationType=integer}
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+
+END
+
+ExeStack: 
+
+Symbol Table: 
+v -> RefValue{address=1, locationType=integer}
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+1 -> 20
+
+END
+
+ExeStack: 
+CompoundStmt{stmt1=NewStmt{varName='a', expr=VariableExpression{variableExp='v'}}, stmt2=CompoundStmt{stmt1=PrintStmt{exp=ReadHeapExpression{expression=VariableExpression{variableExp='v'}}}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=ReadHeapExpression{expression=ReadHeapExpression{expression=VariableExpression{variableExp='a'}}} + , exp2=ValueExpression{value=5}}}}}
+
+Symbol Table: 
+v -> RefValue{address=1, locationType=integer}
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+1 -> 20
+
+END
+
+ExeStack: 
+
+Symbol Table: 
+a -> RefValue{address=0, locationType=RefType{innerType=integer}}
+v -> RefValue{address=1, locationType=integer}
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+1 -> 20
+
+END
+
+ExeStack: 
+CompoundStmt{stmt1=PrintStmt{exp=ReadHeapExpression{expression=VariableExpression{variableExp='v'}}}, stmt2=PrintStmt{exp=ArithmeticExpression{exp1=ReadHeapExpression{expression=ReadHeapExpression{expression=VariableExpression{variableExp='a'}}} + , exp2=ValueExpression{value=5}}}}
+
+Symbol Table: 
+a -> RefValue{address=0, locationType=RefType{innerType=integer}}
+v -> RefValue{address=1, locationType=integer}
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+1 -> 20
+
+END
+
+ExeStack: 
+
+Symbol Table: 
+a -> RefValue{address=2, locationType=RefType{innerType=integer}}
+v -> RefValue{address=1, locationType=integer}
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+1 -> 20
+2 -> RefValue{address=1, locationType=integer}
+
+END
+
+ExeStack: 
+PrintStmt{exp=ArithmeticExpression{exp1=ReadHeapExpression{expression=ReadHeapExpression{expression=VariableExpression{variableExp='a'}}} + , exp2=ValueExpression{value=5}}}
+
+Symbol Table: 
+a -> RefValue{address=2, locationType=RefType{innerType=integer}}
+v -> RefValue{address=1, locationType=integer}
+
+Output List: 
+
+File Table: 
+
+Heap Table: 
+1 -> 20
+2 -> RefValue{address=1, locationType=integer}
+
+END
+
+ExeStack: 
+
+Symbol Table: 
+a -> RefValue{address=2, locationType=RefType{innerType=integer}}
+v -> RefValue{address=1, locationType=integer}
+
+Output List: 
+20
+
+File Table: 
+
+Heap Table: 
+1 -> 20
+2 -> RefValue{address=1, locationType=integer}
+
+END
+
+ExeStack: 
+
+Symbol Table: 
+a -> RefValue{address=2, locationType=RefType{innerType=integer}}
+v -> RefValue{address=1, locationType=integer}
+
+Output List: 
+20
+25
+
+File Table: 
+
+Heap Table: 
+1 -> 20
+2 -> RefValue{address=1, locationType=integer}
+
+END
+
