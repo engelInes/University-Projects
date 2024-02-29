@@ -1,0 +1,15 @@
+E:\facultate\Sem4\software engineering\pb12\bin\Debug\net6.0\pb12.exe
+E:\facultate\Sem4\software engineering\pb12\bin\Debug\net6.0\pb12.deps.json
+E:\facultate\Sem4\software engineering\pb12\bin\Debug\net6.0\pb12.runtimeconfig.json
+E:\facultate\Sem4\software engineering\pb12\bin\Debug\net6.0\pb12.dll
+E:\facultate\Sem4\software engineering\pb12\bin\Debug\net6.0\pb12.pdb
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\pb12.csproj.AssemblyReference.cache
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\pb12.GeneratedMSBuildEditorConfig.editorconfig
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\pb12.AssemblyInfoInputs.cache
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\pb12.AssemblyInfo.cs
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\pb12.csproj.CoreCompileInputs.cache
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\pb12.dll
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\refint\pb12.dll
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\pb12.pdb
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\pb12.genruntimeconfig.cache
+E:\facultate\Sem4\software engineering\pb12\obj\Debug\net6.0\ref\pb12.dll

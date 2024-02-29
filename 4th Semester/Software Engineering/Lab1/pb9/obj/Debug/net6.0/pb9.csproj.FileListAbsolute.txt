@@ -1,0 +1,15 @@
+E:\facultate\Sem4\software engineering\pb9\bin\Debug\net6.0\pb9.exe
+E:\facultate\Sem4\software engineering\pb9\bin\Debug\net6.0\pb9.deps.json
+E:\facultate\Sem4\software engineering\pb9\bin\Debug\net6.0\pb9.runtimeconfig.json
+E:\facultate\Sem4\software engineering\pb9\bin\Debug\net6.0\pb9.dll
+E:\facultate\Sem4\software engineering\pb9\bin\Debug\net6.0\pb9.pdb
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\pb9.csproj.AssemblyReference.cache
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\pb9.GeneratedMSBuildEditorConfig.editorconfig
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\pb9.AssemblyInfoInputs.cache
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\pb9.AssemblyInfo.cs
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\pb9.csproj.CoreCompileInputs.cache
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\pb9.dll
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\refint\pb9.dll
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\pb9.pdb
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\pb9.genruntimeconfig.cache
+E:\facultate\Sem4\software engineering\pb9\obj\Debug\net6.0\ref\pb9.dll
