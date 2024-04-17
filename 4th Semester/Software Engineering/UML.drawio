@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-17T12:24:10.667Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="X78wGR-4YywWqUwvBlHr" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-17T12:24:51.986Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="jSBcn55wJiyw3vi2HfkP" version="24.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2450" dy="1989" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2855" dy="2194" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -947,6 +947,26 @@
         </mxCell>
         <mxCell id="mbNu1JkJSxgDgJ7gaiAV-20" value="+RemoveMemberFromGroup(groupName: string, member User): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="mbNu1JkJSxgDgJ7gaiAV-6" vertex="1">
           <mxGeometry y="250" width="250" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Cn2Hv3FoskT15pSYobs5-0" value="" style="endArrow=open;shadow=0;strokeWidth=1;rounded=0;curved=0;endFill=1;edgeStyle=elbowEdgeStyle;elbow=vertical;exitX=1.001;exitY=0.027;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QegDPVJf7pusOnz6bvU5-7">
+          <mxGeometry x="0.5" y="41" relative="1" as="geometry">
+            <mxPoint x="-220" as="sourcePoint" />
+            <mxPoint x="220" y="400" as="targetPoint" />
+            <mxPoint x="-40" y="32" as="offset" />
+            <Array as="points">
+              <mxPoint x="-10" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cn2Hv3FoskT15pSYobs5-1" value="1" style="resizable=0;align=left;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;" connectable="0" vertex="1" parent="Cn2Hv3FoskT15pSYobs5-0">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cn2Hv3FoskT15pSYobs5-2" value="0....*" style="resizable=0;align=right;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;" connectable="0" vertex="1" parent="Cn2Hv3FoskT15pSYobs5-0">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-7" y="4" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
