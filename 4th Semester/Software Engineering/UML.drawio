@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-17T12:11:52.464Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="2CkVfkbEkB-_KAKJhNE1" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-17T12:12:24.710Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="5wTOPnUoFIyZPVz_V8YA" version="24.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2935" dy="1816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -378,7 +378,7 @@
           <mxGeometry x="1654" y="990" width="220" height="50" as="geometry" />
         </mxCell>
         <mxCell id="3yT8356qW33JT61PNnHo-3" value="ProfileNetworkInfoService" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="970" y="368" width="390" height="1530" as="geometry">
+          <mxGeometry x="970" y="368" width="390" height="1570" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -487,8 +487,11 @@
         <mxCell id="7rRwgbb3iHMXLxLH9fKi-2" value="+ UpdatePassword(email:string, newPassword:string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3yT8356qW33JT61PNnHo-3">
           <mxGeometry y="1450" width="390" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7rRwgbb3iHMXLxLH9fKi-3" value="+ GetAllUsers(): User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3yT8356qW33JT61PNnHo-3">
+        <mxCell id="7rRwgbb3iHMXLxLH9fKi-4" value="+AddUsers(user:User): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3yT8356qW33JT61PNnHo-3">
           <mxGeometry y="1490" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7rRwgbb3iHMXLxLH9fKi-3" value="+ GetAllUsers(): User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="3yT8356qW33JT61PNnHo-3">
+          <mxGeometry y="1530" width="390" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3yT8356qW33JT61PNnHo-69" value="PostsRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="90" y="1670" width="285" height="112" as="geometry" />
