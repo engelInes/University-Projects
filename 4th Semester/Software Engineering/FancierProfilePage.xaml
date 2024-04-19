@@ -1,0 +1,329 @@
+﻿<UserControl x:Class="District_3_App.FancierProfilePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:District_3_App"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Fancier Profile" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="#FF47525E"/>
+
+            <Grid x:Name="MottosGrid" Grid.Row="1" Margin="10">
+                <Label Content="Motto of the day" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Foreground="#FF47525E" FontWeight="Bold"/>
+                <Button x:Name="AddMottoButton" Content="Add" HorizontalAlignment="Left" Margin="357,0,0,0" VerticalAlignment="Center" Width="94" Click="AddMottoButton_Click" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBox HorizontalAlignment="Left" Margin="3,25,0,0" TextWrapping="Wrap" Text="Choose a daily motto from our list or add your own!
+                         The perfect way to tell your friends about your day" VerticalAlignment="Top" Width="285" Height="43" Foreground="#FF8190A5" BorderBrush="#00000000" SelectionBrush="#00000000" />
+
+                <Popup x:Name="MottoPopUp" PlacementTarget="{Binding ElementName=AddMottoButton}" Placement="Center" StaysOpen="False">
+                    <Border Background="White" BorderBrush="#FF47525E" Width="250" Height="150" BorderThickness="1" CornerRadius="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Content="Choose one of ours:" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
+                            <Button x:Name="closePopUpButton" Grid.Row="0" Grid.Column="1" Content="X" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="closePopUpButton_Click">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="2"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+
+                            <ComboBox Name="MottosComboBox" Grid.Row="1" Grid.ColumnSpan="2" Margin="5">
+                                <ComboBoxItem Content="LIVE every moment, LAUGH every day, LOVE beyond words"></ComboBoxItem>
+                                <ComboBoxItem Content="You know my name not my story"></ComboBoxItem>
+                                <ComboBoxItem Content="Let's stop wasting time, get wasted and have the time of our lives"></ComboBoxItem>
+                                <ComboBoxItem Content="DALE -Mr. Worldwide"></ComboBoxItem>
+                                <ComboBoxItem Content="This is for everybody going through tough times: been there, done that"></ComboBoxItem>
+                            </ComboBox>
+                            <Label Content="Or make your own:" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                            <TextBox x:Name="textInputBox" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5" TextChanged="textInputBox_TextChanged"/>
+
+                            <Button Grid.Row="4" Grid.Column="0" x:Name="SaveMottoButton" Content="Save" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="SaveMottoButton_Click" Width="100">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="2"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <Button Grid.Row="4" Grid.Column="1" x:Name="cancelMottoButton" Content="Cancel" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="closePopUpButton_Click" Width="100">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="2"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                        </Grid>
+                    </Border>
+                </Popup>
+
+            </Grid>
+
+
+
+            <Grid x:Name="ExtraLinks" Grid.Row="2" Margin="10">
+                <Label Content="Extra Links" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Foreground="#FF47525E" FontWeight="Bold"/>
+                <Button x:Name="AddExtraLinksButton" Content="Add" HorizontalAlignment="Left" Margin="357,0,0,0" VerticalAlignment="Center" Width="94" Click="AddExtraLinksButton_Click"  Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBox HorizontalAlignment="Left" Margin="3,25,0,0" TextWrapping="Wrap" Text="Add links to your profile and promote your work!" VerticalAlignment="Top" Width="285" Height="43" Foreground="#FF8190A5" BorderBrush="#00000000" SelectionBrush="#00000000" />
+
+                <Popup x:Name="LinksPopUp" PlacementTarget="{Binding ElementName=AddExtraLinksButton}" Placement="Center" StaysOpen="False" >
+                    <Border Background="White" BorderBrush="#FF47525E" Width="250" Height="150" CornerRadius="10" BorderThickness="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Content="Write the links " Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" FontSize="14" />
+                            <Button x:Name="closeLinksPopUpButton" Grid.Row="0" Grid.Column="1" Content="X" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="closeLinksPopUpButton_Click" Margin="5"/>
+                            <TextBox x:Name="link1Text"  Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10" Width="200" Height="25" BorderThickness="1" BorderBrush="#FF47525E"/>
+                            <TextBox x:Name="link2Text"  Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10" Width="200" Height="25" BorderThickness="1" BorderBrush="#FF47525E" />
+                            <Button Grid.Row="4" Grid.Column="0" x:Name="SaveLinksButton" Content="Save" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="SaveLinksButton_Click" Margin="5" Width="100">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="2"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <Button Grid.Row="4" Grid.Column="1" x:Name="cancelLinksButton" Content="Cancel" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="cancelLinksButton_Click" Margin="5" Width="100">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="2"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                        </Grid>
+                    </Border>
+                </Popup>
+
+
+            </Grid>
+
+            <Grid x:Name="FramesGrid" Grid.Row="3" Margin="5,25,15,-48">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="257*"/>
+                    <ColumnDefinition Width="223*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Frames" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Foreground="#FF47525E" FontWeight="Bold" Margin="3,-29,0,0"/>
+                <UniformGrid Rows="1" Columns="7" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" >
+                    <Button x:Name="firstFrame" Background="White" BorderThickness="0" Height="52" Width="52" Margin="5" Click="firstFrame_Click">
+                        <Rectangle Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6">
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFF00BD"/>
+                                    <GradientStop Color="#FF0A2CB9" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                    </Button>
+
+                    <Button x:Name="secondFrame" Background="White" BorderThickness="0" Height="52" Width="52" Click="secondFrame_Click">
+                        <Rectangle Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6">
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FF80006E" Offset="1"/>
+                                    <GradientStop Color="#FFEE47F2" Offset="0.798"/>
+                                    <GradientStop Color="White" Offset="0.616"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                    </Button>
+                    <Button x:Name="thirdFrame"  Background="White" BorderThickness="0" Height="52" Width="52" Click="thirdFrame_Click">
+                        <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6" >
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFD52D00"/>
+                                    <GradientStop Color="#FFA30262" Offset="1"/>
+                                    <GradientStop Color="#FFB55690" Offset="0.858"/>
+                                    <GradientStop Color="#FFD162A4" Offset="0.629"/>
+                                    <GradientStop Color="White" Offset="0.497"/>
+                                    <GradientStop Color="#FFFF9A56" Offset="0.36"/>
+                                    <GradientStop Color="#FFEF7627" Offset="0.199"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                    </Button>
+                    <Button x:Name="forthFrame"  Background="White" BorderThickness="0" Height="52" Width="52" Click="forthFrame_Click">
+                        <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6" >
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFE40303"/>
+                                    <GradientStop Color="DarkOrange" Offset="0.21"/>
+                                    <GradientStop Color="#FFFFED00" Offset="0.401"/>
+                                    <GradientStop Color="#FF008026" Offset="0.57"/>
+                                    <GradientStop Color="#FF24408E" Offset="0.766"/>
+                                    <GradientStop Color="#FF732982" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                    </Button>
+                    <Button x:Name="fifthFrame"  Background="White" BorderThickness="0" Height="52" Width="52" Click="fifthFrame_Click" >
+                        <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6" >
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF5BCEFA"/>
+                                    <GradientStop Color="#FFF5A9B8" Offset="0.272"/>
+                                    <GradientStop Color="White" Offset="0.519"/>
+                                    <GradientStop Color="#FFF5A9B8" Offset="0.734"/>
+                                    <GradientStop Color="#FF5BCEFA" Offset="0.981"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                    </Button>
+                    <Button x:Name="romanianFlagFrame"  Background="White" BorderThickness="0" Height="52" Width="52" Click="romanianFlagFrame_Click">
+                        <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6">
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                    <GradientStop Color="#0033A0" Offset="0"/>
+                                    <GradientStop Color="#0033A0" Offset="0.333"/>
+                                    <GradientStop Color="#FFCE1126" Offset="0.333"/>
+                                    <GradientStop Color="#FFCE1126" Offset="0.666"/>
+                                    <GradientStop Color="#FCD116" Offset="0.666"/>
+                                    <GradientStop Color="#FCD116" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                    </Button>
+                    <Button x:Name="NoneFrame" Background="White" BorderThickness="0" Height="52" Width="52" Click="NoneFrame_Click" >
+                        <Grid>
+                            <Rectangle HorizontalAlignment="Left" Height="50" Stroke="#FF8492A6" VerticalAlignment="Center" Width="50"  />
+                            <Label Content="None" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="398" Canvas.Top="264" Foreground="#FF8190A5" RenderTransformOrigin="0.742,1.183"/>
+                        </Grid>
+                    </Button>
+
+
+                </UniformGrid>
+            </Grid>
+
+
+            <Grid x:Name="HashtagsGrid" Grid.Row="3" Margin="6,84,51,-132">
+                <Label Content="Hashtags" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Foreground="#FF47525E" FontWeight="Bold"/>
+                <Button Content="#Fun" HorizontalAlignment="Left" Margin="3,25,0,0" VerticalAlignment="Top" Width="39" Foreground="#FF8190A5" Click="Fun_Button_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Gray"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button Content="#Sad" HorizontalAlignment="Left" Margin="47,25,0,0" VerticalAlignment="Top" Width="39" Foreground="#FF8190A5" Background="White" Click="Sad_Button_Click_1">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Gray"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="#OpenToWork" HorizontalAlignment="Left" Margin="90,25,0,0" VerticalAlignment="Top" Width="87" Foreground="#FF8190A5" Background="White" Click="Button_Click_Open_to_Work">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Gray"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="#JustMarried" HorizontalAlignment="Left" Margin="181,25,0,0" VerticalAlignment="Top" Width="87" Foreground="#FF8190A5" Background="White" Click="Button_Click_Married">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Gray"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="#Engaged" HorizontalAlignment="Left" Margin="273,25,0,0" VerticalAlignment="Top" Width="70" Foreground="#FF8190A5" Background="White" Click="Button_Click_Engaged">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Gray"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="#BigPromotion" HorizontalAlignment="Left" Margin="348,25,0,0" VerticalAlignment="Top" Width="95" Foreground="#FF8190A5" Background="White" Click="Button_Click_Promotion">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Gray"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="Remove Hashtag" HorizontalAlignment="Left" Margin="448,25,0,0" VerticalAlignment="Top" Width="95" Foreground="#FF8190A5" Background="White" Click="Button_Click_Remove">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Gray"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

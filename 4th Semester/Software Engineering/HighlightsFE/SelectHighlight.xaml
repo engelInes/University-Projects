@@ -1,0 +1,65 @@
+﻿<Window x:Class="District_3_App.HighlightsFE.SelectHighlight"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:District_3_App.HighlightsFE"
+        mc:Ignorable="d"
+        Title="SelectHighlight" Height="250" Width="300">
+    <Grid Margin="0,0,3,0">
+        <Frame x:Name="navigationFrame"/>
+        <Grid Background="#FFC8D0D9">
+
+            <Label Content="Choose a highlight" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF47525E" FontSize="18" Margin="0,10,0,0" Height="34" Width="159"/>
+
+            <ScrollViewer Margin="3,44,57,71" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+                <ItemsControl ItemsSource="{Binding}" Margin="0,45,0,43" HorizontalAlignment="Left" Width="236">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Columns="4"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Border CornerRadius="10" BorderThickness="1" BorderBrush="#FF47525E" Width="50" Height="50" ClipToBounds="True">
+                                    <Image Source="{Binding Cover}" Width="50" Height="50" />
+                                </Border>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Margin="0,5,0,0"
+                                   HorizontalAlignment="Center"
+                                   IsChecked="False"
+                                   Checked="CheckBox_Checked"
+                                    Loaded="CheckBox_Loaded"
+                                   Unchecked="CheckBox_Unchecked" />
+                                    <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Margin="0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+            <StackPanel Margin="241,48,0,128" HorizontalAlignment="Left" Width="35">
+                <Button x:Name="createNewHighlightButton" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="createNewHighlightButton_Click" HorizontalAlignment="Right" Height="28" Width="31">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                    <Image Source="../Images/plus.png" Stretch="Uniform" HorizontalAlignment="Center"></Image>
+                </Button>
+                <Label Content="new" Foreground="#FF47525E"  FontSize="14" />
+            </StackPanel>
+
+
+        </Grid>
+        <Button Content="Done" x:Name="DoneButton" Background="#FF47525E" Foreground="White" BorderBrush="#5A6978" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" Click="DoneButton_Click" Width="76" Height="30">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

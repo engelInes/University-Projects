@@ -1,0 +1,346 @@
+﻿<UserControl x:Class="District_3_App.ProfileInfo_GUI.EditProfileInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:District_3_App.ProfileInfo_GUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+
+        <StackPanel x:Name="EditProfileInfoStackPanel" Orientation="Horizontal" Width="1000">
+
+            <Border BorderThickness="0,0,0,0" BorderBrush="Black">
+                <StackPanel Orientation="Vertical" Margin="0,15,-290,0" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            Text="Email"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                        />
+                        <TextBox 
+                            x:Name="EmailTextBox"
+                            Text="name@gmail.com" 
+                            Width="157" 
+                            Height="25"
+                            Margin="5,0,0,0"
+                            FontSize="9"
+                        />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock
+                            Text="Phone number"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                        />
+                        <TextBox 
+                            x:Name="PhoneNumberTextBox"
+                            Text="073177151" 
+                            Width="157" 
+                            Height="25"
+                            Margin="5,0,0,0"
+                            FontSize="9"
+                        />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock
+                            Text="Date of Birth"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                        />
+                        <DatePicker x:Name="DatePickerBirthDate" Width="159" Height="27">
+                            <DatePicker.Resources>
+                                <Style TargetType="{x:Type DatePickerTextBox}">
+                                    <Setter Property="FontSize" Value="12"/>
+                                </Style>
+                            </DatePicker.Resources>
+                        </DatePicker>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock
+                            Text="Username"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                        />
+                        <TextBox 
+                            x:Name="UsernameTextBox"
+                            Text="name.lastName" 
+                            Width="157" 
+                            Height="25"
+                            Margin="5,0,0,0"
+                            FontSize="9"
+                        />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock
+                            Text="Name"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                        />
+                        <TextBox 
+                            x:Name="NameTextBox"
+                            Text="Stoica Patricia" 
+                            Width="157" 
+                            Height="25"
+                            Margin="5,0,0,0"
+                            FontSize="9"
+                        />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock
+                            Text="Work"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                        />
+                        <TextBox 
+                            x:Name="WorkTextBox"
+                            Text="Tesla" 
+                            Width="157" 
+                            Height="25"
+                            Margin="5,0,0,0"
+                            FontSize="9"
+                        />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
+                        <TextBlock
+                            Text="Position"
+                            FontSize="10"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                        />
+                        <TextBox 
+                            x:Name="PositionTextBox"
+                            Text="Tesla" 
+                            Width="157" 
+                            Height="25"
+                            Margin="8,0,0,0"
+                            FontSize="13"
+                        />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
+                        <TextBlock
+                            Text="Start date"
+                            FontSize="10"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                        />
+                        <DatePicker x:Name="DatePickerWorkStartDate" Width="200" Height="25" Margin="5,0,0,0">
+                            <DatePicker.Resources>
+                                <Style TargetType="DatePickerTextBox">
+                                    <Setter Property="FontSize" Value="12"/>
+                                </Style>
+                            </DatePicker.Resources>
+                        </DatePicker>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
+                        <TextBlock
+                            Text="End date"
+                            FontSize="10"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                        />
+                        <DatePicker x:Name="DatePickerWorkEndDate" Width="200" Height="25" Margin="5,0,0,0">
+                            <DatePicker.Resources>
+                                <Style TargetType="DatePickerTextBox">
+                                    <Setter Property="FontSize" Value="12"/>
+                                </Style>
+                            </DatePicker.Resources>
+                        </DatePicker>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
+                        <TextBlock
+                            Text="Location"
+                            FontSize="10"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                        />
+                        <ComboBox x:Name="WorkLocationComboBox" Width="200" Height="27" Margin="7,0,0,0" SelectedIndex="0">
+                            <ComboBoxItem IsSelected="True">Choose Location</ComboBoxItem>
+                            <ComboBoxItem Content="Option 1"/>
+                            <ComboBoxItem Content="Option 2"/>
+                            <ComboBoxItem Content="Option 3"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
+                        <TextBlock
+                            Text="Description"
+                            FontSize="10"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                        />
+                        <TextBox
+                            x:Name="DescriptionTextBox"
+                            Text="" 
+                            Width="183" 
+                            Height="28"
+                            Margin="8,0,0,0"
+                            FontSize="10"
+                        />
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+
+            <StackPanel Orientation="Vertical" Margin="300,15,0,0" VerticalAlignment="Top" Width="407">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock
+                        Text="Education"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        VerticalAlignment="Center"
+                    />
+                    <ComboBox x:Name="EducationComboBox" Width="185" Height="27" Margin="7,0,0,0" SelectedIndex="0">
+                        <ComboBoxItem IsSelected="True">Choose Education</ComboBoxItem>
+                        <ComboBoxItem Content="Option 1"/>
+                        <ComboBoxItem Content="Option 2"/>
+                        <ComboBoxItem Content="Option 3"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBlock
+                        Text="Education level"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        Margin="0"
+                        VerticalAlignment="Center"
+                    />
+                    <TextBox
+                        x:Name="EducationLevelTextBox"
+                        Text="" 
+                        Width="154" 
+                        Height="30"
+                        Margin="5,0,0,0"
+                        FontSize="8"
+                    />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
+                    <TextBlock
+                        Text="Start date"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        VerticalAlignment="Center"
+                    />
+                    <DatePicker x:Name="DatePickerEducationStartDate" Width="181" Height="27" Margin="5,0,0,0">
+                        <DatePicker.Resources>
+                            <Style TargetType="DatePickerTextBox">
+                                <Setter Property="FontSize" Value="12"/>
+                            </Style>
+                        </DatePicker.Resources>
+                    </DatePicker>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
+                    <TextBlock
+                        Text="End date"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        VerticalAlignment="Center"
+                    />
+                    <DatePicker x:Name="DatePickerEducationEndDate" Width="184" Height="25" Margin="5,0,0,0">
+                        <DatePicker.Resources>
+                            <Style TargetType="DatePickerTextBox">
+                                <Setter Property="FontSize" Value="12"/>
+                            </Style>
+                        </DatePicker.Resources>
+                    </DatePicker>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
+                    <TextBlock
+                        Text="Location"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        VerticalAlignment="Center"
+                    />
+                    <ComboBox x:Name="EducationLocationComboBox" Width="200" Height="27" Margin="7,0,0,0" SelectedIndex="0">
+                        <ComboBoxItem IsSelected="True">Choose Location</ComboBoxItem>
+                        <ComboBoxItem Content="Option 1"/>
+                        <ComboBoxItem Content="Option 2"/>
+                        <ComboBoxItem Content="Option 3"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical" Margin="15,13,0,0" HorizontalAlignment="Left">
+                        <TextBlock
+                            Text="Hobbies"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                        />
+                        <TextBox 
+                            x:Name="HobbiesTextBox"
+                            Text="" 
+                            Margin="0,10,0,0"
+                            Width="108" 
+                            Height="114"
+                            FontSize="10" RenderTransformOrigin="0.315,0.891"
+                        />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Margin="15,13,0,0" HorizontalAlignment="Left">
+                        <TextBlock
+                            Text="Music"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                        />
+                        <TextBox 
+                            x:Name="MusicTextBox"
+                            Text="" 
+                            Margin="0,10,0,0"
+                            Width="114" 
+                            Height="114"
+                            FontSize="9" RenderTransformOrigin="0.315,0.891"
+                        />
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBlock
+                        Text="Places"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        VerticalAlignment="Center"
+                    />
+                    <ComboBox x:Name="PlacesComboBox" Width="206" Height="27" Margin="7,0,0,0" SelectedIndex="0">
+                        <ComboBoxItem IsSelected="True">Choose Location</ComboBoxItem>
+                        <ComboBoxItem Content="Option 1"/>
+                        <ComboBoxItem Content="Option 2"/>
+                        <ComboBoxItem Content="Option 3"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Width="376" Margin="27,25,0,0">
+                    <Button Content="Save changes" Width="100" Height="25" Background="Gray" Click="SaveChanges_Button"/>
+                    <Button Content="Cancel" Width="100" Height="25" Margin="5" Background="Gray" Click="Cancel_Button"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

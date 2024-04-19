@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="District_3_App.Statistics.Statistics"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:District_3_App.Statistics"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="229.573"/>
+            <ColumnDefinition Width="18.427"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Left side -->
+        <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="20,42,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left">
+            <TextBlock Text="Statistics" FontSize="24" FontWeight="Bold"/>
+            <TextBlock Text="Time Spent on the app" FontSize="20" FontFamily="Segoe UI Semibold" Margin="0,10,0,20"/>
+            <TextBlock FontSize="16" Margin="0,20,0,0">
+            <Run FontWeight="Bold" Text="Streaks"/><Run Text=" - Top 5 interactions"/>
+            </TextBlock>
+            <!-- Stack panel containing usernames -->
+            <StackPanel Margin="0,20,0,0">
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="1. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
+                    <TextBlock x:Name="Bestie1" Text="" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Streak1" Text="" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="2. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
+                    <TextBlock x:Name="Bestie2" Text="" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Streak2" Text="" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="3. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock x:Name="Bestie3" Text="" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Streak3" Text="" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="4. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock x:Name="Bestie4" Text="" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Streak4" Text="" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="5. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock x:Name="Bestie5" Text="" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Streak5" Text="" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Right side -->
+        <!-- Add your right side elements here -->
+        <StackPanel Grid.Column="2" VerticalAlignment="Top" Margin="50,0,10,0">
+            <!-- First circle with bold text and normal text -->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Width="200">
+                <StackPanel Width="88">
+                    <TextBlock Text="Today" FontWeight="Bold" FontSize="23"/>
+                    <TextBlock x:Name="TodaysTime" Text=""  FontSize="17"/>
+                </StackPanel>
+                <Ellipse Width="100" Height="100" Fill="Red"/>
+            </StackPanel>
+            <!-- Second circle with bold text and normal text -->
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Ellipse Width="100" Height="100" Fill="Green" Margin="0,0,10,0"/>
+                <StackPanel>
+                    <TextBlock Text="This Week" FontWeight="Bold" FontSize="23"/>
+                    <TextBlock Text="2h20min"  FontSize="17"/>
+                </StackPanel>
+            </StackPanel>
+            <!-- Third circle with bold text and normal text -->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Width="300">
+                <StackPanel>
+                    <TextBlock Text="This Month" FontWeight="Bold" FontSize="23"/>
+                    <TextBlock Text="2h20min"  FontSize="17"/>
+                </StackPanel>
+                <Ellipse Width="100" Height="100" Fill="Blue" Margin="0,0,20,0"/>
+
+            </StackPanel>
+        </StackPanel>
+
+
+    </Grid>
+</UserControl>

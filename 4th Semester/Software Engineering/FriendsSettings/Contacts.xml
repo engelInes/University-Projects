@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<contacts>
+	<contact>
+		<Id>fc0e19f2-114f-47f1-a25a-1245035bc7b3</Id>
+		<username>@patri.stoica</username>
+		<email>email1@example.com</email>
+		<phoneNumber>0752111222</phoneNumber>
+		<birthday>2000-01-01T00:00:00</birthday>
+	</contact>
+	<contact>
+		<Id>68ce0f1a-b031-4c62-b2d2-f297e2f68768</Id>
+		<username>@delia.gherasim</username>
+		<phoneNumber>0743111222</phoneNumber>
+		<birthday>1995-05-05T00:00:00</birthday>
+	</contact>
+</contacts>

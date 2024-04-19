@@ -1,0 +1,159 @@
+﻿<UserControl x:Class="District_3_App.ExtraInfo.ExtraInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:District_3_App.ExtraInfo"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="extraInfoGrid" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220.573"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" x:Name="EditProfileButton" Height="50" Margin="4,46,4,10" Click="EditProfileButton_Click" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderThickness="0" HorizontalContentAlignment="Left">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="\images\userExtraInfo.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <TextBlock Text="Edit Profile" FontSize="20"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Column="0" x:Name="SettingsPrivacyButton" Click="SettingsPrivacyButton_Click" Height="49" Margin="4,87,579,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal" Height="70" Width="204">
+                <Image Source="\images\settings.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <TextBlock Text="Settings and Privacy" FontSize="20" Width="182" Height="31"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="StatisticsButton" Click="StatisticsButton_Click"  Height="50" Margin="7,132,10,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="\images\statistics.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <TextBlock Text="Statistics" FontSize="20"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="FancierProfileButton" Click="FancierProfileButton_Click" Height="50" Margin="4,171,5,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="\images\fancierProfile.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <TextBlock Text="Fancier Profile" FontSize="20" TextAlignment="Left"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="SavedPostsButton" Click="SavedPostsButton_Click" Height="50" Margin="5,211,5,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="\images\saved.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <TextBlock Text="Saved" FontSize="20" TextAlignment="Left"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="CloseFriendsButton" Click="CloseFriendsButton_Click" Height="50" Margin="2,257,10,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.Column="0">
+            <StackPanel Orientation="Horizontal" Width="170">
+                <Image Source="\images\closeFriends.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <TextBlock Text="Close Friends" FontSize="20" Width="150"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="VerifiedAccountButton" Height="50" Margin="2,307,2,0" Click="VerifiedAccountButton_Click" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.Column="0">
+            <StackPanel Orientation="Horizontal" Width="170">
+                <Image Source="\images\verify.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <TextBlock Text="Verified Account" FontSize="19"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="FriendsSettingsButton" Click="FriendsSettingsButton_Click" Height="43" Margin="2,357,6,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.Column="0">
+            <StackPanel Orientation="Horizontal" Width="168">
+                <Image Source="\images\friends.png" Width="16" Height="16" Margin="0,0,4,0"/>
+                <TextBlock Text="Friends Settings" FontSize="20"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="LikedPostsButton" Height="50" Click="LikedPostsButton_Click" Margin="5,400,8,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="\images\likedPosts.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <TextBlock Text="Liked Posts" FontSize="20"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <!--<StackPanel Orientation="Vertical" Margin="0,0,10,0" Grid.Column="0">
+            <TextBlock Text="District 3" FontWeight="Bold" FontSize="25" Foreground="#47525E" Width="269"/>
+            <StackPanel Orientation="Horizontal"  Margin="10,15,0,20">
+                <Image Source="\images\home.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                <Button x:Name="Home" Background="Transparent" BorderBrush="Transparent">
+                    <TextBlock Text="Home" Margin="5,0,0,0" FontSize="20"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"  Margin="10,15,0,20">
+                <Image Source="\images\search-interface-symbol.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                <Button x:Name="Search" Background="Transparent" BorderBrush="Transparent">
+                    <TextBlock Text="Search" Margin="5,0,0,0" FontSize="20"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"  Margin="10,15,0,20">
+                <Image Source="\images\explore.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                <Button x:Name="Explore" Background="Transparent" BorderBrush="Transparent">
+                    <TextBlock Text="Explore" Margin="5,0,0,0" FontSize="20"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,15,0,20">
+                <Image Source="\images\reel.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                <Button x:Name="Reels" Background="Transparent" BorderBrush="Transparent">
+                    <TextBlock Text="Reels" Margin="5,0,0,0" FontSize="20"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,15,0,20">
+                <Image Source="\images\send.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                <Button x:Name="Messages" Background="Transparent" BorderBrush="Transparent">
+                    <TextBlock Text="Messages" Margin="5,0,0,0" FontSize="20"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,15,0,20">
+                <Image Source="\images\bell.png" Width="30" Height="30" Margin="3,0,10,0"/>
+                <Button x:Name="Notifications" Background="Transparent" BorderBrush="Transparent">
+                    <TextBlock Text="Notifications" Margin="5,0,0,0" FontSize="20"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,15,0,20">
+                <Image Source="\images\user.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                <Button x:Name="Profile" Background="Transparent" BorderBrush="Transparent">
+                    <TextBlock Text="Profile" Margin="5,0,0,0" FontSize="20"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>-->
+        <StackPanel HorizontalAlignment="Left" Width="180" Grid.Column="0">
+            <TextBlock Text="Extra Info" Foreground="#343B42" FontWeight="Bold" FontSize="25"/>
+            <Line X1="200" Y1="-35" X2="200" Y2="800" Stroke="#8492A6" StrokeThickness="1" />
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,59 @@
+<groups>
+  <group groupId="c221950c-7e1d-4a17-83a7-9af616bba78d" groupName="group 1">
+    <members>
+      <user userId="d161f928-2601-4e63-be9f-c05a1399b6b3" username="username2" password="password2" email="username2@gmail.ro" confirmationPassword="password2" />
+      <user userId="cf9428ef-97c3-4003-9815-03942dc79da8" username="username3" password="password3" email="user3@yahoo.com" confirmationPassword="password3" />
+      <user userId="3b63be21-18ce-46cb-801c-0dca405c7e83" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+      <user userId="db61df0b-f9ae-489e-8406-bc116ee26ebc" username="username5" password="password5" email="username4@gmail.es" confirmationPassword="password5" />
+    </members>
+  </group>
+  <group groupId="efa488bd-050b-442c-8ebb-5ae3a4d9b7e4" groupName="group 3">
+    <members>
+      <user userId="3b63be21-18ce-46cb-801c-0dca405c7e83" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+      <user userId="55f400a6-dcdf-4763-8ab0-fd6f2d1438a3" username="username5" password="password5" email="username4@gmail.es" confirmationPassword="password5" />
+      <user userId="d161f928-2601-4e63-be9f-c05a1399b6b3" username="username2" password="password2" email="username2@gmail.ro" confirmationPassword="password2" />
+    </members>
+  </group>
+  <group groupId="487a96c4-eb2b-4eea-9ac2-ecf3458206ec" groupName="group 2">
+    <members>
+      <user userId="3b63be21-18ce-46cb-801c-0dca405c7e83" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+      <user userId="55f400a6-dcdf-4763-8ab0-fd6f2d1438a3" username="username5" password="password5" email="username4@gmail.es" confirmationPassword="password5" />
+      <user userId="ad36cdfe-3a9f-4f6b-a2ce-d9a73fd4c405" username="username4" password="password4" email="username4@stud.ubbcluj.ro" confirmationPassword="password4" />
+      <user userId="5d0cd3c3-9f92-481c-9c6e-75830d3743a4" username="username3" password="password3" email="user3@yahoo.com" confirmationPassword="password3" />
+    </members>
+  </group>
+  <group groupId="df05a760-20bd-4b3f-920f-a5407ad0c25a" groupName="another group">
+    <members>
+      <user userId="55f400a6-dcdf-4763-8ab0-fd6f2d1438a3" username="username5" password="password5" email="username4@gmail.es" confirmationPassword="password5" />
+      <user userId="cf9428ef-97c3-4003-9815-03942dc79da8" username="username3" password="password3" email="user3@yahoo.com" confirmationPassword="password3" />
+      <user userId="ce7ad3bd-0b87-4122-8766-54be4cef5fe9" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+      <user userId="ba8f4eca-daa5-4c34-af00-0ff70a022526" username="username2" password="password2" email="username2@gmail.ro" confirmationPassword="password2" />
+    </members>
+  </group>
+  <group groupId="4163dad5-ab81-4d26-9d02-559d04d88733" groupName="testXMLGroup">
+    <members>
+      <user userId="998e1318-0a8c-4896-9aa0-6cd64419fc78" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+    </members>
+  </group>
+  <group groupId="14620abb-17a0-4dd3-9c7e-8aa1de3b8225" groupName="newGrouptestXML">
+    <members>
+      <user userId="51a31753-6359-47c9-82fa-b8468136e14f" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+    </members>
+  </group>
+  <group groupId="61ffb63b-5f2d-4ef6-8a1a-d01ef83b784b" groupName="testAllXML">
+    <members>
+      <user userId="88d05d97-0cad-4ce3-a06f-be6e69d698b5" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+    </members>
+  </group>
+  <group groupId="1ffeb77a-a4dd-437b-a561-d5a90ace73d7" groupName="THELAST___TEST">
+    <members>
+      <user userId="52e1cf6f-c1a9-4100-af4b-9eedc2172cb2" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+      <user userId="2d793e4d-0dd3-43f4-b6d3-c3a415212b45" username="username4" password="password4" email="username4@stud.ubbcluj.ro" confirmationPassword="password4" />
+    </members>
+  </group>
+  <group groupId="a74f5009-94ce-4216-b294-5ea1b9c7e475" groupName="newOne">
+    <members>
+      <user userId="e773f1d1-b302-45f2-965c-1741bcbd5458" username="username1" password="password1" email="user1@yahoo.ro" confirmationPassword="password1" />
+    </members>
+  </group>
+</groups>

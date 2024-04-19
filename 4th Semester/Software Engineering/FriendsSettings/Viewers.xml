@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<viewers>
+	<viewer>
+		<Id>fc0e19f2-114f-47f1-a25a-1245035bc7b3</Id>
+		<username>@patri.stoica</username>
+		<email>email1@example.com</email>
+		<phoneNumber>0752111222</phoneNumber>
+		<birthday>2000-01-01T00:00:00</birthday>
+	</viewer>
+	<viewer>
+		<Id>68ce0f1a-b031-4c62-b2d2-f297e2f68768</Id>
+		<username>@delia.gherasim</username>
+		<phoneNumber>0743111222</phoneNumber>
+		<birthday>1995-05-05T00:00:00</birthday>
+	</viewer>
+	<viewer>
+		<Id>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxz</Id>
+		<username>@anita.gorog</username>
+		<phoneNumber>0755111222</phoneNumber>
+		<birthday>1995-08-05T00:00:00</birthday>
+	</viewer>
+</viewers>
+
+

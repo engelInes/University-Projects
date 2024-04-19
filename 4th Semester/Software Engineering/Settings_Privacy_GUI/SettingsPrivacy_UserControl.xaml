@@ -1,0 +1,236 @@
+﻿<UserControl x:Class="District_3_App.Settings_Privacy_GUI.SettingsPrivacy_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:District_3_App.Settings_Privacy_GUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+    <Grid x:Name="settingsPrivacyGrid" HorizontalAlignment="Left">
+
+        <ListView x:Name="restrictedPostsAudienceListView" 
+      HorizontalAlignment="Left" 
+      Height="39" 
+      Margin="20,238,0,0" 
+      VerticalAlignment="Top" 
+      Width="200" 
+      d:ItemsSource="{d:SampleData ItemCount=5}" 
+      BorderThickness="0">
+            <!-- Define a style for ListViewItem to change the selected item color -->
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <!-- Trigger to change the background color of the selected item -->
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="LightBlue"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <!-- You can define columns here -->
+                    <GridViewColumn Header="Column Header" Width="Auto"/>
+                </GridView>
+            </ListView.View>
+            <!-- Remove any border on the ListView -->
+            <ListView.Template>
+                <ControlTemplate TargetType="ListView">
+                    <Border BorderThickness="0">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ItemsPresenter />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ListView.Template>
+        </ListView>
+
+
+        <Label Content="Restricted Posts Audience:" FontSize="10" HorizontalAlignment="Left" Margin="20,202,0,0" VerticalAlignment="Top"/>
+        <Label Content="Groups:" FontSize="10" HorizontalAlignment="Left" Margin="20,353,0,0" VerticalAlignment="Top" Height="23" Width="63"/>
+        <Label Content="Restricted Stories Audience:" FontSize="10" HorizontalAlignment="Left" Margin="20,131,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="23" Width="133">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.316"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ListView x:Name="restrictedStoriesAudienceListView" 
+      HorizontalAlignment="Left" 
+Height="39" 
+Margin="20,158,0,0" 
+VerticalAlignment="Top" 
+Width="200" 
+d:ItemsSource="{d:SampleData ItemCount=5}" 
+BorderThickness="0">
+            <!-- Define a style for ListViewItem to change the selected item color -->
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <!-- Trigger to change the background color of the selected item -->
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="LightBlue"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <!-- You can define columns here -->
+                    <GridViewColumn Header="Column Header" Width="Auto"/>
+                </GridView>
+            </ListView.View>
+            <!-- Remove any border on the ListView -->
+            <ListView.Template>
+                <ControlTemplate TargetType="ListView">
+                    <Border BorderThickness="0">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ItemsPresenter />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ListView.Template>
+        </ListView>
+
+
+
+        <ListView x:Name="groupsListView" 
+      HorizontalAlignment="Left" 
+Height="39" 
+Margin="20,381,0,0" 
+VerticalAlignment="Top" 
+Width="200" 
+d:ItemsSource="{d:SampleData ItemCount=5}" 
+BorderThickness="0">
+            <!-- Define a style for ListViewItem to change the selected item color -->
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <!-- Trigger to change the background color of the selected item -->
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="LightBlue"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <!-- You can define columns here -->
+                    <GridViewColumn Header="Column Header" Width="Auto"/>
+                </GridView>
+            </ListView.View>
+            <!-- Remove any border on the ListView -->
+            <ListView.Template>
+                <ControlTemplate TargetType="ListView">
+                    <Border BorderThickness="0">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ItemsPresenter />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ListView.Template>
+        </ListView>
+
+
+        <Label Content="Settings &amp; Privacy" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="152" Margin="20,48,0,0"/>
+        <Label Content="Password:" FontSize="10" HorizontalAlignment="Left" Margin="20,90,0,0" VerticalAlignment="Top" Width="63" Height="26"/>
+        <Label Content="Blocked Accounts:" FontSize="10" HorizontalAlignment="Left" Margin="20,282,0,0" VerticalAlignment="Top" Height="22" Width="109"/>
+
+        <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" x:Name="isProfilePrivateCheckBox" Content="Private Account" Margin="80,425,0,0" Unchecked="isProfilePrivateCheckBox_Unchecked" Checked="isProfilePrivateCheckBox_Checked"/>
+
+        <Button Content="Add" FontSize="11" x:Name="addRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="248,134,0,0" VerticalAlignment="Top" Background="White" Click="addRestrictedStoriesUserButton_Click"/>
+        <Button Content="Add" FontSize="11" x:Name="addRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="248,204,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537" Click="addRestrictedPostsUserButton_Click"/>
+
+        <Button Content="Add" FontSize="11" x:Name="addBlockedAccountButton" HorizontalAlignment="Left" Margin="248,284,0,0" VerticalAlignment="Top" Background="White" Click="addBlockedAccountButton_Click"/>
+        <Button Click="mantainGroupsButton_Click" Content="Edit" FontSize="11" x:Name="mantainGroupsButton" HorizontalAlignment="Left" Margin="248,355,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.392,1.181"/>
+
+
+
+        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="291,134,0,0" VerticalAlignment="Top" Background="White" Click="removeRestrictedStoriesUserButton_Click"/>
+        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="291,204,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537" Click="removeRestrictedPostsUserButton_Click"/>
+
+        <Button Content="Remove" FontSize="11" x:Name="removeBlockedAccountButton" HorizontalAlignment="Left" Margin="291,284,0,0" VerticalAlignment="Top" Background="White" Click="removeBlockedAccountButton_Click"/>
+        <Button Click="leaveGroupButton_Click" Content="Leave" FontSize="11" x:Name="leaveGroupButton" HorizontalAlignment="Left" Margin="291,355,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
+        <ListView x:Name="blockedProfilesListView" HorizontalAlignment="Left" 
+Height="39" 
+Margin="20,309,0,0" 
+VerticalAlignment="Top" 
+Width="200" 
+d:ItemsSource="{d:SampleData ItemCount=5}" 
+BorderThickness="0">
+            <!-- Define a style for ListViewItem to change the selected item color -->
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <!-- Trigger to change the background color of the selected item -->
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="LightBlue"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <!-- You can define columns here -->
+                    <GridViewColumn Header="Column Header" Width="Auto"/>
+                </GridView>
+            </ListView.View>
+            <!-- Remove any border on the ListView -->
+            <ListView.Template>
+                <ControlTemplate TargetType="ListView">
+                    <Border BorderThickness="0">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ItemsPresenter />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ListView.Template>
+        </ListView>
+        <TextBox x:Name="usernameToBlockTextBox" HorizontalAlignment="Left" Margin="349,284,0,0" TextWrapping="Wrap" Text="Block some user..." VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="usernameRestrictTextBox" HorizontalAlignment="Left" Margin="349,158,0,0" TextWrapping="Wrap" Text="give username..." VerticalAlignment="Top" Width="120"/>
+        <Label Content="Username to restrict:" HorizontalAlignment="Left" Margin="349,125,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="passwordChangeTextBox" HorizontalAlignment="Left" Margin="186,94,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Change password" Background="White" HorizontalAlignment="Left" Margin="323,94,0,0" VerticalAlignment="Top" Height="18" Width="102" Click="changePasswordButton_Click"/>
+
+
+    </Grid>
+</UserControl>
